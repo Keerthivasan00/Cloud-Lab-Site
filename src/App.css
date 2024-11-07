@@ -1,0 +1,76 @@
+*{
+  scroll-behavior: smooth;
+  font-family: "Inter";
+  /* overflow-x: hidden; */
+}
+
+
+
+.parent{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0%;
+}
+
+.rewards-container {
+  display: flex;
+  height: 430px;
+  width: 80%;
+  align-items: center;
+  justify-content: left;
+  margin-left: 13%;
+  scroll-behavior: smooth;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  
+}
+
+.rewards-container::-webkit-scrollbar{
+  -webkit-appearance: none;
+}
+.rewards-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 70px;
+  /* margin-top: 18%; */
+  margin-bottom: 3%;
+}
+
+.rewards-scroll{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.faculty-header{
+  width: 100%;
+  text-align: center;
+  /* margin-top: 3%; */
+  margin-bottom: 3%;
+}
+
+.main-rewards{
+
+  /* display: flex; */
+  animation:swipe 20000ms linear infinite;
+  width: 100%;
+
+}
+
+@keyframes swipe{
+  0%{
+    transform:translate(0);
+  }
+
+  100%{
+    transform: translate(-1200%);
+  }
+}
+
+
+
+
+
